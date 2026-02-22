@@ -1,6 +1,6 @@
 # CanDelivers - Urban Bulky-Item Delivery Optimization System
 
-A production-grade Python system for optimizing delivery routes for bulky items in urban environments. Implements Vehicle Routing Problem with Time Windows (VRPTW) using nearest-neighbor heuristic with 2-opt local search improvement, discrete-event simulation, and real-time tracking.
+A Python system for optimizing delivery routes for bulky items in urban environments. Implements Vehicle Routing Problem with Time Windows (VRPTW) using nearest-neighbor heuristic with 2-opt local search improvement, discrete-event simulation, and real-time tracking.
 
 ## Features
 
@@ -52,10 +52,10 @@ The Vehicle Routing Problem with Time Windows (VRPTW) involves:
 
 1. Start with empty routes for each vehicle
 2. For each unassigned order:
-   - Find nearest unassigned order to current vehicle location
-   - Check if it fits in vehicle capacity
-   - Assign order to route
-   - Move to delivery location
+  - Find nearest unassigned order to current vehicle location
+  - Check if it fits in vehicle capacity
+  - Assign order to route
+  - Move to delivery location
 3. Repeat until no more orders can be assigned
 
 **Time Complexity**: O(n²) where n is number of orders
@@ -66,9 +66,9 @@ The Vehicle Routing Problem with Time Windows (VRPTW) involves:
 
 1. Take a route with n stops
 2. For each pair of edges (i, i+1) and (j, j+1):
-   - Reverse the segment between them
-   - Calculate new distance
-   - Keep improvement if total distance decreases
+  - Reverse the segment between them
+  - Calculate new distance
+  - Keep improvement if total distance decreases
 3. Repeat until no improvement possible
 
 **Improvement**: Typically 5-15% reduction in distance vs initial solution
@@ -281,7 +281,7 @@ print(MetricsCalculator.summary_report(metrics))
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/candelivers.git
+git clone https://github.com/ErturkCan/candelivers.git
 cd candelivers
 
 # Create virtual environment
